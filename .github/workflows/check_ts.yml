@@ -1,6 +1,6 @@
 name: 'check-ts'
 on:
-  pull_request:
+  push:
 jobs:
   ts:
     runs-on: ubuntu-latest
