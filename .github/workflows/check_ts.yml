@@ -1,6 +1,6 @@
 name: 'check-ts'
 on:
-  push:
+  pull_request:
 jobs:
   ts:
     runs-on: ubuntu-latest
@@ -22,7 +22,7 @@ jobs:
           echo 'Files modified: ${{steps.files.outputs.files_updated}}'
           echo 'Files added: ${{steps.files.outputs.files_created}}'
           echo 'Files removed: ${{steps.files.outputs.files_deleted}}'
-      - uses: Arhia/action-check-typescript@v0.10
+      - uses: Arhia/action-check-typescript@v2.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           use-check: true
