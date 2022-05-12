@@ -14,5 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "@openspacelabs/react-native-zoomable-view": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
   }
 }
